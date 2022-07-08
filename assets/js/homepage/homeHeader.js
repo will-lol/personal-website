@@ -35,7 +35,6 @@ function drawLine() {
 }
 
 let observerText = new IntersectionObserver(entries => {
-    console.log(entries);
     if (entries[0].boundingClientRect.y < 0) {
         document.getElementById("scrollingText").classList.remove("showY");
         setTimeout(stopAnim => {
