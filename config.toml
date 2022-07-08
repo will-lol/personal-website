@@ -1,0 +1,24 @@
+baseURL = 'https://will-lol.github.io/personal-website'
+languageCode = 'en-au'
+title = 'William Bradshaw'
+[menu]
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 2
+[[menu.main]]
+  identifier = 'blog'
+  name = 'Blog'
+  url = '/blog/'
+  weight = 3
+[[menu.main]]
+  identifier = 'contact'
+  name = 'Contact'
+  url = '/contact/'
+  weight = 4

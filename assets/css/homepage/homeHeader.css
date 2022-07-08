@@ -1,0 +1,164 @@
+.scrollingText {
+    position: fixed;
+    bottom: 0;
+    padding: 1.3rem;
+    width: 100%;
+    z-index: 10;
+    background-color: hsl(var(--bg-color));
+    box-shadow: 0px 0px 30px 5px hsl(var(--bg-color)), 0px 0px 1px 1px hsl(var(--bg-color));
+    transition: transform 1s;
+    transform: translateY(150%);
+}
+
+.showY {
+    transform: translateY(0%);
+}
+
+#scrollTrigger {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    top: 10px;
+}
+
+.scrollingText span {
+    position: inherit;
+    bottom: 17%;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    animation-name: scrolling;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.homeHeader__feature {
+    position: relative;
+    height: 150vh;
+    margin-bottom: 3rem;
+    box-shadow: var(--multi-shadow);
+    background-image: linear-gradient(0deg,
+            hsla(23deg, 86%, 19%, 0.6) 0%,
+            hsla(29deg, 92%, 18%, 0.6) 13%,
+            hsla(34deg, 96%, 17%, 0.6) 25%,
+            hsla(39deg, 96%, 16%, 0.6) 37%,
+            hsla(44deg, 93%, 15%, 0.6) 50%,
+            hsla(49deg, 85%, 15%, 0.6) 63%,
+            hsla(55deg, 75%, 15%, 0.6) 75%,
+            hsla(63deg, 63%, 16%, 0.6) 87%,
+            hsla(71deg, 54%, 17%, 0.6) 100%)
+}
+
+.homeHeader__feature svg {
+    width: 100%;
+    height: 100%;
+}
+
+.homeHeader__text {
+    margin-bottom: 5rem;
+}
+
+.homeHeader__text h1 {
+    font-size: 5rem;
+}
+
+.homeHeader__text h1 span {
+    font-family: "Libre Baskerville";
+}
+
+.homeHeader__feature__guy {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 15rem;
+    opacity: 0;
+    transition: opacity, 0.5s;
+}
+
+.homeHeader__feature__guy svg {
+    width: 4rem;
+    height: 3rem;
+}
+
+.reveal {
+    opacity: 1;
+}
+
+.homeHeader__feature__guy--1 {
+    top: 5%;
+    left: 3%;
+    transform: rotate(-4deg);
+}
+
+.homeHeader__feature__guy--2 {
+    top: 20%;
+    right: 3%;
+    transform: rotate(6deg);
+}
+
+.homeHeader__feature__guy--3 {
+    top: 35%;
+    left: 3%;
+    transform: rotate(2deg);
+}
+
+.homeHeader__feature__guy--4 {
+    top: 45%;
+    right: 3%;
+}
+
+.homeHeader__feature__guy--5 {
+    top: 55%;
+    left: 3%;
+}
+
+.homeHeader__feature__guy--6 {
+    top: 80%;
+    right: 3%;
+}
+
+.homeHeader__feature__guy--7 {
+    top: 90%;
+    left: 3%;
+}
+
+@media only screen and (max-width: 640px) {
+    .homeHeader__text h1 {
+        font-size: 4rem;
+    }
+
+    .homeHeader__feature {
+        height: 150vh;
+    }
+
+    .homeHeader__text {
+        margin: 1rem 0rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .homeHeader__feature {
+        background-image: linear-gradient(0deg,
+                hsla(23deg 86% 70% 0.4) 0%,
+                hsla(27deg 83% 68% 0.4) 11%,
+                hsla(31deg 80% 65% 0.4) 22%,
+                hsla(35deg 76% 62% 0.4) 33%,
+                hsla(40deg 71% 60% 0.4) 44%,
+                hsla(45deg 65% 57% 0.4) 56%,
+                hsla(50deg 60% 54% 0.4) 67%,
+                hsla(56deg 54% 51% 0.4) 78%,
+                hsla(63deg 53% 49% 0.4) 89%,
+                hsla(71deg 54% 50% 0.4) 100%);
+    }
+}

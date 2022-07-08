@@ -1,0 +1,8 @@
+{{ $nav__style := resources.Get "css/nav.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $nav__style.Permalink }}">
+<nav class="nav box-shadow-med">
+    <h1 class="nav__brand">{{ .Site.Title }}</h1>
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+</nav>

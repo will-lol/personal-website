@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{{ $utilities__style := resources.Get "css/utilities.css" | resources.Minify | resources.Fingerprint }}
+{{ $root__style := resources.Get "css/root.css" | resources.Minify | resources.Fingerprint }}
+{{ $fonts__style := resources.Get "css/fonts.css" | resources.Minify | resources.Fingerprint }}
+{{ $favicon := resources.Get "images/favicon.svg" | resources.Minify | resources.Fingerprint }}
+<html lang="{{ .Site.Language.Lang }}">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }} {{.Page.Title}} | {{ .Site.Title }} {{ end }}</title>
+    <link rel="stylesheet" href="{{ $utilities__style.Permalink }}">
+    <link rel="stylesheet" href="{{ $root__style.Permalink }}">
+    <link rel="icon" href="{{ $favicon.Permalink }}" type="image/svg+xml">
+  </head>
+  <body>
+    {{ partial "nav.html" . }}
+    {{ block "main" . }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $fonts__style.Permalink }}">
+  </body>
+</html>
