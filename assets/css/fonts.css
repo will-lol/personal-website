@@ -5,7 +5,7 @@
     font-display: swap;
     
     src: local(''),
-        url('fonts/libre-franklin-v12-latin-regular.woff2') format('woff2'), local(".LucidaGrandeUI"), local("Segoe UI")
+        url('./fonts/libre-franklin-v12-latin-regular.woff2') format('woff2'), local(".LucidaGrandeUI"), local("Segoe UI")
 }
 
 @font-face {
@@ -14,7 +14,7 @@
     font-weight: 500;
     font-display: swap;
     src: local(''),
-        url('fonts/libre-franklin-v12-latin-500.woff2') format('woff2'), local(".LucidaGrandeUI"), local("Segoe UI")
+        url('./fonts/libre-franklin-v12-latin-500.woff2') format('woff2'), local(".LucidaGrandeUI"), local("Segoe UI")
 }
 
 @font-face {
@@ -23,7 +23,7 @@
     font-weight: 400;
     font-display: swap;
     src: local(''),
-        url('fonts/libre-baskerville-v14-latin-regular.woff2') format('woff2')
+        url('./fonts/libre-baskerville-v14-latin-regular.woff2') format('woff2')
 }
 
 @font-face {
@@ -32,5 +32,5 @@
     font-weight: 400;
     font-display: swap;
     src: local(''),
-        url('fonts/libre-baskerville-v14-latin-italic.woff2') format('woff2')
+        url('./fonts/libre-baskerville-v14-latin-italic.woff2') format('woff2')
 }
