@@ -14,7 +14,7 @@ guys.forEach(guy => {
     observerGuys.observe(guy)
 })
 
-var feature = document.getElementById("feature");
+/*var feature = document.getElementById("feature");
 var line = document.getElementById("line");
 var length = line.getTotalLength();
 var draw, length;
@@ -31,8 +31,11 @@ function drawLine() {
         scrollRatio = 1;
     }
     draw = length * scrollRatio;
+    console.log(draw)
+    console.log(length)
+    console.log(length - draw)
     line.style.strokeDashoffset = length - draw;
-}
+}*/
 
 let observerText = new IntersectionObserver(entries => {
     if (entries[0].boundingClientRect.y < 0) {
