@@ -157,7 +157,7 @@
     left: 3%;
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
     .homeHeader__text h1 {
         font-size: 4rem;
     }
