@@ -5,6 +5,25 @@
     padding: 1rem 0rem;
 }
 
+.pageTitle {
+    margin-bottom: 5rem;
+}
+
+.pageTitle h1 {
+    font-size: 5rem;
+}
+
+@media (max-width: 640px) {
+    .pageTitle h1 {
+        font-size: 4rem;
+    }
+
+    .pageTitle {
+        margin: 1rem 0rem;
+    }
+}
+
+
 .hide {
     display: none;
 }

@@ -1,15 +1,25 @@
 {{ define "main" }}
-    <article>
-        <header>
-            <h1>{{.Title}}</h1>
-        </header>
-        {{.Content}}
-    </article>
-    <ul>
-    {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}} </a>
-        </li>
-    {{ end }}
-    </ul>
+{{ $list__style := resources.Get "css/base/list.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $list__style.Permalink }}">
+<section>
+    <div class="container">
+        <div class="pageTitle">
+            <h1>{{ .Title }}</h1>
+            <h2> {{ .Content }} </h2>
+        </div>
+        <div class="cards">
+            {{ range .Pages }}
+            <div class="card">
+                {{ .Params.author }}
+                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}} </a>
+                {{ $image := .Resources.GetMatch "sunset.webp" }}
+                <img src="{{ $image.RelPermalink }}" alt="" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                <p>{{ .Params.description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+</section>
+
 {{ end }}

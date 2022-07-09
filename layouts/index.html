@@ -10,7 +10,7 @@
     <div id="scrollTrigger"></div>
     <section>
         <div class="container homeHeader">
-            <div class="homeHeader__text">
+            <div class="pageTitle">
                 <h1>Hello <span>welcome</span> to the website</h1>
                 <h2>What is a website</h2>
             </div>
@@ -80,7 +80,9 @@
                 <script defer src="{{ $homeHeader__script.Permalink }}"></script>
             </div>
             <link rel="stylesheet" href="{{ $button__style.Permalink }}">
-            <button class="button button--primary" href="">Check out my blog!</button>
+            {{ with .GetPage "blog" }}
+            <a href="{{ .RelPermalink }}"><button class="button button--primary">Check out my blog!</button></a>
+            {{ end }}
         </div>
     </section>
 {{ end }}

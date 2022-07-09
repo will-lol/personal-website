@@ -89,15 +89,8 @@
 
     }
 }
-.homeHeader__text {
-    margin-bottom: 5rem;
-}
 
-.homeHeader__text h1 {
-    font-size: 5rem;
-}
-
-.homeHeader__text h1 span {
+.pageTitle h1 span {
     font-family: "Libre Baskerville";
 }
 
@@ -158,16 +151,8 @@
 }
 
 @media (max-width: 640px) {
-    .homeHeader__text h1 {
-        font-size: 4rem;
-    }
-
     .homeHeader__feature {
         height: 150vh;
-    }
-
-    .homeHeader__text {
-        margin: 1rem 0rem;
     }
 }
 
