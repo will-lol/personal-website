@@ -12,8 +12,9 @@
             <div class="card">
                 {{ .Params.author }}
                 <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}} </a>
-                {{ $image := .Resources.GetMatch "sunset.webp" }}
-                <img src="{{ $image.RelPermalink }}" alt="" width="{{ $image.Width }}" height="{{ $image.Height }}">
+                {{ with .Resources.GetMatch .Params.header_image.path }}
+                    <img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
+                {{ end }}
                 <p>{{ .Params.description }}</p>
             </div>
             {{ end }}
