@@ -60,16 +60,16 @@
             hsla(71deg, 54%, 17%, 0.6) 100%)
 }
 
-.homeHeader__feature svg {
+#svgcontainer {
     width: 100%;
     height: 100%;
     will-change: transform;
 
 }
 
-.homeHeader__feature svg path {
+#svgcontainer path {
     stroke-dasharray: 8150.97px;
-    stroke-dashoffset: 8150.97px;
+    stroke-dashoffset: 0px;
     animation-name: strokeAnimation;
     animation-timeline: pathTimeline;
     animation-timing-function: linear;
@@ -86,10 +86,9 @@
 
     to {
         stroke-dashoffset: 0px;
-        
+
     }
 }
-
 .homeHeader__text {
     margin-bottom: 5rem;
 }
@@ -185,5 +184,14 @@
                 hsla(56deg 54% 51% 0.4) 78%,
                 hsla(63deg 53% 49% 0.4) 89%,
                 hsla(71deg 54% 50% 0.4) 100%);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .scrollingText {
+        display: none;
+    }
+    #svgcontainer path {
+        animation: none;
     }
 }
