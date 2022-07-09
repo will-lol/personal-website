@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://will-lol.github.io/personal-website/tags/awesome/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/blog/awesome/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/tags/cool/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/blog/example-post-copy-2/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/blog/example-post-copy/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/blog/example-post/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/tags/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/blog/</loc>
+    <lastmod>2022-07-09T21:01:02+10:00</lastmod>
+  </url><url>
     <loc>https://will-lol.github.io/personal-website/about/</loc>
   </url><url>
     <loc>https://will-lol.github.io/personal-website/categories/</loc>
   </url><url>
     <loc>https://will-lol.github.io/personal-website/contact/</loc>
-  </url><url>
-    <loc>https://will-lol.github.io/personal-website/</loc>
-  </url><url>
-    <loc>https://will-lol.github.io/personal-website/tags/</loc>
-  </url><url>
-    <loc>https://will-lol.github.io/personal-website/blog/</loc>
   </url>
 </urlset>
