@@ -16,8 +16,10 @@ guys.forEach((guy) => {
   observerGuys.observe(guy);
 });
 
-const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-if ((!CSS.supports("animation-timeline: pathTimeline")) && (!isReduced)) {
+const isReduced =
+  window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+  window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+if (!CSS.supports("animation-timeline: pathTimeline") && !isReduced) {
   var feature = document.getElementById("feature");
   var line = document.getElementById("line");
   var length = line.getTotalLength();
