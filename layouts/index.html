@@ -1,4 +1,3 @@
-{{ define "title" }}William Bradshaw{{ end }}
 {{ define "main" }}
     {{ $homeHeader__style := resources.Get "css/homepage/homeHeader.css" | resources.Minify | resources.Fingerprint }}
     {{ $button__style := resources.Get "css/button.css" | resources.Minify | resources.Fingerprint }}
