@@ -4,8 +4,6 @@
   <url>
     <loc>https://will-lol.github.io/personal-website/about/</loc>
   </url><url>
-    <loc>https://will-lol.github.io/personal-website/blog/</loc>
-  </url><url>
     <loc>https://will-lol.github.io/personal-website/categories/</loc>
   </url><url>
     <loc>https://will-lol.github.io/personal-website/contact/</loc>
@@ -13,5 +11,7 @@
     <loc>https://will-lol.github.io/personal-website/</loc>
   </url><url>
     <loc>https://will-lol.github.io/personal-website/tags/</loc>
+  </url><url>
+    <loc>https://will-lol.github.io/personal-website/blog/</loc>
   </url>
 </urlset>
