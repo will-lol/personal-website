@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-direction: column;
     padding: 1rem;
 }
