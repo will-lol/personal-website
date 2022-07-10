@@ -1,5 +1,5 @@
 ---
-title: "Pizza is the best food ever and here is why."
+title: "Pizza is the best food ever and here is why. Can you tell I like it?"
 description: "10 reasons why pizza is just superior!"
 date: 2022-07-10T12:56:48+10:00
 author: William Bradshaw
@@ -8,7 +8,7 @@ header_image:
     path: "pizza.webp"
     attribution: Ferdinand Stöhr
     attribution_link: https://unsplash.com/@fellowferdi
-draft: true
+draft: false
 ---
 
 # number 1

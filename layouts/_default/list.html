@@ -1,6 +1,7 @@
 {{ define "main" }}
-{{ $list__style := resources.Get "css/base/list.css" | resources.Minify | resources.Fingerprint }}
+{{ $list__style := resources.Get "css/base/list/list.css" | resources.Minify | resources.Fingerprint }}
 {{ $button__style := resources.Get "css/button.css" | resources.Minify | resources.Fingerprint }}
+{{ $empty__style := resources.Get "css/base/list/empty.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $list__style.Permalink }}">
 <section>
     <div class="container">
@@ -10,23 +11,28 @@
         </div>
         <div class="cards">
             {{ $posts := .Pages }}
-            {{ range $posts }}
-                <a href="{{ .Permalink }}">
-                    <div class="card">
-                        <div class="card__content">
-                            <h1>{{.Title}}</h1>
-                            <h2>{{ .Params.description }}</h2>
-                            <link rel="stylesheet" href="{{ $button__style.Permalink }}">
-                            <span>{{ .Date | time.Format ":date_long" }}</span> 
-                            <a class="card__button" href="{{ .Permalink }}"><button>Give it a read</button></a>
+            {{ if $posts | gt 1 }}
+                <style>{{ $empty__style.Content | safeCSS }}</style>
+                <p class="empty__emoji">😔</p>
+                <p class="empty__text">Sorry bout' that! Nothing here yet.</p>
+            {{ else }}
+                {{ range $posts }}
+                    <a href="{{ .Permalink }}">
+                        <div class="card">
+                            <div class="card__content">
+                                <h1>{{.Title}}</h1>
+                                <h2>{{ .Params.description }}</h2>
+                                <link rel="stylesheet" href="{{ $button__style.Permalink }}">
+                                <span>{{ .Date | time.Format ":date_long" }}</span> 
+                                <a class="card__button" href="{{ .Permalink }}"><button>Give it a read</button></a>
+                            </div>
+                            {{ with .Resources.GetMatch .Params.header_image.path }}
+                                <img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
+                            {{ end }}
                         </div>
-                        {{ with .Resources.GetMatch .Params.header_image.path }}
-                            <img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
-                        {{ end }}
-                    </div>
-                </a>
+                    </a>
+                {{ end }}
             {{ end }}
-                
         </div>
     </div>
 
