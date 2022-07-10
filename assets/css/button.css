@@ -1,6 +1,7 @@
 button {
     position: relative;
     color: hsl(var(--text-color));
+    background-color: hsl(var(--bg-color));
     font-family: "Libre Franklin";
     border-radius: 5rem;
     border: none;
