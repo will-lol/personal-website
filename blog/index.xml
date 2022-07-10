@@ -5,43 +5,6 @@
     <link>https://will-lol.github.io/personal-website/blog/</link>
     <description>Recent content in The blog is here! on William Bradshaw</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-au</language>
-    <lastBuildDate>Sat, 09 Jul 2022 21:01:02 +1000</lastBuildDate><atom:link href="https://will-lol.github.io/personal-website/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Awesome</title>
-      <link>https://will-lol.github.io/personal-website/blog/awesome/</link>
-      <pubDate>Sat, 09 Jul 2022 21:01:02 +1000</pubDate>
-      
-      <guid>https://will-lol.github.io/personal-website/blog/awesome/</guid>
-      <description>this is awesome true</description>
-    </item>
-    
-    <item>
-      <title>examplepost</title>
-      <link>https://will-lol.github.io/personal-website/blog/example-post-copy-2/</link>
-      <pubDate>Sat, 09 Jul 2022 21:01:02 +1000</pubDate>
-      
-      <guid>https://will-lol.github.io/personal-website/blog/example-post-copy-2/</guid>
-      <description>hi this is an example cool stuff why the flip isnt this working</description>
-    </item>
-    
-    <item>
-      <title>examplepost</title>
-      <link>https://will-lol.github.io/personal-website/blog/example-post-copy/</link>
-      <pubDate>Sat, 09 Jul 2022 21:01:02 +1000</pubDate>
-      
-      <guid>https://will-lol.github.io/personal-website/blog/example-post-copy/</guid>
-      <description>hi this is an example cool stuff why the flip isnt this working</description>
-    </item>
-    
-    <item>
-      <title>examplepost</title>
-      <link>https://will-lol.github.io/personal-website/blog/example-post/</link>
-      <pubDate>Sat, 09 Jul 2022 21:01:02 +1000</pubDate>
-      
-      <guid>https://will-lol.github.io/personal-website/blog/example-post/</guid>
-      <description>hi this is an example cool stuff why the flip isnt this working</description>
-    </item>
-    
+    <language>en-au</language><atom:link href="https://will-lol.github.io/personal-website/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
