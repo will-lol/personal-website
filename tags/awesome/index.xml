@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on William Bradshaw</title>
-    <link>https://will-lol.github.io/personal-website/</link>
-    <description>Recent content in Home on William Bradshaw</description>
+    <title>awesome on William Bradshaw</title>
+    <link>https://will-lol.github.io/personal-website/tags/awesome/</link>
+    <description>Recent content in awesome on William Bradshaw</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Sun, 10 Jul 2022 12:56:48 +1000</lastBuildDate><atom:link href="https://will-lol.github.io/personal-website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jul 2022 12:56:48 +1000</lastBuildDate><atom:link href="https://will-lol.github.io/personal-website/tags/awesome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pizza is the best food ever and here is why. Can you tell I like it?</title>
       <link>https://will-lol.github.io/personal-website/blog/pizzaisawesome/</link>
@@ -23,24 +23,6 @@
       
       <guid>https://will-lol.github.io/personal-website/blog/example/</guid>
       <description>hi this is an example </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://will-lol.github.io/personal-website/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://will-lol.github.io/personal-website/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://will-lol.github.io/personal-website/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://will-lol.github.io/personal-website/contact/</guid>
-      <description></description>
     </item>
     
   </channel>
