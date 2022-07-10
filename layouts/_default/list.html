@@ -27,7 +27,7 @@
                                 <a class="card__button" href="{{ .Permalink }}"><button>Give it a read</button></a>
                             </div>
                             {{ with .Resources.GetMatch .Params.header_image.path }}
-                                <img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
+                                <img loading="lazy" src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
                             {{ end }}
                         </div>
                     </a>
