@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $list__style := resources.Get "css/base/list.css" | resources.Minify | resources.Fingerprint }}
+{{ $button__style := resources.Get "css/button.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $list__style.Permalink }}">
 <section>
     <div class="container">
@@ -8,16 +9,24 @@
             <h2> {{ .Content }} </h2>
         </div>
         <div class="cards">
-            {{ range .Pages }}
-            <div class="card">
-                {{ .Params.author }}
-                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}} </a>
-                {{ with .Resources.GetMatch .Params.header_image.path }}
-                    <img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
-                {{ end }}
-                <p>{{ .Params.description }}</p>
-            </div>
+            {{ $posts := .Pages }}
+            {{ range $posts }}
+                <a href="{{ .Permalink }}">
+                    <div class="card">
+                        <div class="card__content">
+                            <h1>{{.Title}}</h1>
+                            <h2>{{ .Params.description }}</h2>
+                            <link rel="stylesheet" href="{{ $button__style.Permalink }}">
+                            <span>{{ .Date | time.Format ":date_long" }}</span> 
+                            <a class="card__button" href="{{ .Permalink }}"><button>Give it a read</button></a>
+                        </div>
+                        {{ with .Resources.GetMatch .Params.header_image.path }}
+                            <img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
+                        {{ end }}
+                    </div>
+                </a>
             {{ end }}
+                
         </div>
     </div>
 
