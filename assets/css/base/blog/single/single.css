@@ -39,7 +39,7 @@
     font-weight: 500;
 }
 
-.infoContainer hr {
+hr {
     border: 0.1rem solid hsl(var(--text-color), 50%);
     margin: 1rem 0;
 }
@@ -49,9 +49,28 @@
     width: 100%;
 }
 
+.toc__container--mobile {
+    padding-left: 0;
+    display: none;
+}
+
 .toc__contents {
     position: sticky;
     top: 2rem;
+}
+
+.toc__contents--mobile {
+    position: static;
+}
+
+.toc__contents--mobile input {
+    position: relative;
+    display: inline-block;
+    left: 50%
+}
+
+.toc__contents--mobile div {
+    display: inline;
 }
 
 .toc__contents div {
@@ -148,6 +167,9 @@
     }
     .toc__container {
         display: none;
+    }
+    .toc__container--mobile {
+        display: block;
     }
     .infoContainer h1 {
         font-size: 3.5rem;

@@ -19,13 +19,23 @@
                     <span class="infoContainer__author"> {{ .Params.Author }} </span>
                     <hr>
                 </div>
+
+                <div class="toc__container toc__container--mobile">
+                    <div class="toc__contents toc__contents--mobile">
+                        <div>On this page</div>
+                        {{ .TableOfContents }}
+                    </div>
+                    <hr>
+
+                </div>
+
                 <div class="article" id="article">
                     {{ .Content }}
                 </div>
                 <script src="{{ $headingCopy__script.Permalink }}"></script>
             </div>
             
-            <div class="toc__container">
+            <div class="toc__container ">
                 <div class="toc__contents">
                     <div>On this page</div>
                     {{ .TableOfContents }}
