@@ -1,0 +1,170 @@
+.headerImage {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    box-shadow: var(--multi-shadow);
+    margin-bottom: 1rem;
+}
+
+.articleContainer {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.contentContainer {
+    flex-grow: 1;
+    max-width: 50vw;
+}
+
+.infoContainer__date {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.infoContainer h1 {
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    font-weight: normal;
+}
+
+.infoContainer h2 {
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: normal;
+}
+
+.infoContainer__author {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.infoContainer hr {
+    border: 0.1rem solid hsl(var(--text-color), 50%);
+    margin: 1rem 0;
+}
+
+.toc__container {
+    padding-left: 5%;
+    width: 100%;
+}
+
+.toc__contents {
+    position: sticky;
+    top: 2rem;
+}
+
+.toc__contents div {
+    font-weight: 500;
+}
+
+.toc__contents ul {
+    padding-left: 1rem;
+    border-left: 0.1rem solid hsl(var(--text-color), 20%);
+}
+
+.toc__contents ul li a {
+    text-decoration: none;
+    color: hsl(var(--text-color), 70%);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.toc__contents li {
+    list-style-type: none;
+}
+
+.article p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.article h1:hover,.article h2:hover,.article h3:hover,.article h4:hover,.article h5:hover,.article h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: hsl(var(--text-color), 50%);
+}
+
+.article h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.article h1::before {
+    content: "#";
+    position: absolute;
+    font-weight: normal;
+    left: -1.2ch;
+    bottom: 0;
+    font-size: 2.5rem;
+    color: hsl(var(--text-color), 50%);
+}
+
+.article h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.article h2::before {
+    content: "##";
+    position: absolute;
+    font-weight: normal;
+    left: -2.2ch;
+    bottom: 0;
+    font-size: 2rem;
+    color: hsl(var(--text-color), 50%);
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    position: relative;
+}
+
+.article h3::before {
+    content: "###";
+    position: absolute;
+    font-weight: normal;
+    font-style: normal;
+    left: -3.2ch;
+    bottom: 0;
+    font-size: 1.5rem;
+    color: hsl(var(--text-color), 50%);
+}
+
+.article a {
+    color: hsl(var(--primary));
+}
+
+@media (max-width: 1280px) {
+    .contentContainer {
+        max-width: 100%;
+    }
+    .articleContainer {
+        flex-direction: column-reverse;
+    }
+    .toc__container {
+        display: none;
+    }
+    .infoContainer h1 {
+        font-size: 3.5rem;
+    }
+    .article h1::before {
+        position: unset;
+    }
+    .article h2::before {
+        position: unset;
+    }
+    .article h3::before {
+        position: unset;
+    }
+}
+
+@media (max-width: 640px) {
+    .infoContainer h1 {
+        font-size: 3rem;
+    }
+}

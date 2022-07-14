@@ -1,6 +1,12 @@
 baseURL = 'https://will.forsale/'
 languageCode = 'en-au'
 title = 'William Bradshaw'
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 0
+
 [menu]
 [[menu.main]]
   identifier = 'home'

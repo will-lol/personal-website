@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $single__style := resources.Get "css/base/blog/single/single.css" | resources.Minify | resources.Fingerprint }}
+{{ $button__style := resources.Get "css/button.css" | resources.Minify | resources.Fingerprint }}
+{{ $headingCopy__script := resources.Get "js/homepage/base/single/copySection.js" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $single__style.Permalink }}">
+
+<section>
+    <div class="container">
+        {{ with .Resources.GetMatch .Params.header_image.path }}
+        <img class="headerImage" loading="lazy" src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}">
+        {{ end }}
+
+        <div class="articleContainer">
+            <div class="contentContainer">
+                <div class="infoContainer">
+                    <span class="infoContainer__date"> {{ .Date | time.Format ":date_long" }} </span>
+                    <h1>{{ .Title }}</h1>
+                    <h2>{{ .Description }}</h2>
+                    <span class="infoContainer__author"> {{ .Params.Author }} </span>
+                    <hr>
+                </div>
+                <div class="article" id="article">
+                    {{ .Content }}
+                </div>
+                <script src="{{ $headingCopy__script.Permalink }}"></script>
+            </div>
+            
+            <div class="toc__container">
+                <div class="toc__contents">
+                    <div>On this page</div>
+                    {{ .TableOfContents }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

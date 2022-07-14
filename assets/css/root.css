@@ -10,6 +10,10 @@
     color: hsl(var(--text-color))
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -40,4 +44,8 @@ section {
         --primary: 71, 54%, 50%;
         --secondary: 23, 86%, 70%;    
     }
+}
+
+code {
+    white-space: normal;
 }
