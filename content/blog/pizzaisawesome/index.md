@@ -8,7 +8,7 @@ header_image:
     path: "pizza.webp"
     attribution: Ferdinand Stöhr
     attribution_link: https://unsplash.com/@fellowferdi
-draft: false
+draft: true
 ---
 Yahoo! JAPAN is one of the largest media companies in Japan, providing services such as search, news, e-commerce, and e-mail. Over 50 million users log in to Yahoo! [JAPAN](google.com) services every month.
 
