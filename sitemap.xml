@@ -2,31 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://will.forsale/tags/awesome/</loc>
-    <lastmod>2022-07-10T12:56:48+10:00</lastmod>
-  </url><url>
-    <loc>https://will.forsale/tags/cool/</loc>
-    <lastmod>2022-07-10T12:56:48+10:00</lastmod>
-  </url><url>
-    <loc>https://will.forsale/</loc>
-    <lastmod>2022-07-10T12:56:48+10:00</lastmod>
-  </url><url>
-    <loc>https://will.forsale/blog/pizzaisawesome/</loc>
-    <lastmod>2022-07-10T12:56:48+10:00</lastmod>
-  </url><url>
-    <loc>https://will.forsale/tags/</loc>
-    <lastmod>2022-07-10T12:56:48+10:00</lastmod>
-  </url><url>
-    <loc>https://will.forsale/blog/</loc>
-    <lastmod>2022-07-10T12:56:48+10:00</lastmod>
-  </url><url>
-    <loc>https://will.forsale/blog/example/</loc>
-    <lastmod>2022-07-10T12:54:48+10:00</lastmod>
-  </url><url>
     <loc>https://will.forsale/about/</loc>
   </url><url>
     <loc>https://will.forsale/categories/</loc>
   </url><url>
     <loc>https://will.forsale/contact/</loc>
+  </url><url>
+    <loc>https://will.forsale/</loc>
+  </url><url>
+    <loc>https://will.forsale/tags/</loc>
+  </url><url>
+    <loc>https://will.forsale/blog/</loc>
   </url>
 </urlset>
