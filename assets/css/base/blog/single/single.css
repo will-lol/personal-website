@@ -8,7 +8,7 @@
 
 .articleContainer {
     display: flex;
-    padding-top: 1rem;
+    padding: 5rem;
 }
 
 .contentContainer {
@@ -182,6 +182,10 @@ hr {
     }
     .article h3::before {
         position: unset;
+    }
+    .articleContainer {
+        display: flex;
+        padding: 1rem;
     }
 }
 

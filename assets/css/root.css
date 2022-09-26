@@ -49,3 +49,12 @@ section {
 code {
     white-space: normal;
 }
+
+td, th {
+    border: 1px solid hsla(var(--text-color), 25%);
+    padding: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}

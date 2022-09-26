@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $single__style := resources.Get "css/base/blog/single/single.css" | resources.Minify | resources.Fingerprint }}
 {{ $button__style := resources.Get "css/button.css" | resources.Minify | resources.Fingerprint }}
-{{ $headingCopy__script := resources.Get "js/homepage/base/single/copySection.js" | resources.Minify | resources.Fingerprint }}
+{{ $headingCopy__script := resources.Get "js/homepage/blog/single/copySection.js" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $single__style.Permalink }}">
 
 <section>

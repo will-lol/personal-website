@@ -1,4 +1,15 @@
 {{ define "main" }}
-    {{.Title}}
-    {{.Content}}
+{{ $single__style := resources.Get "css/base/single/single.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $single__style.Permalink }}">
+<section>
+    <div class="container">
+        <div class="pageTitle singleTitle">
+            <h1>{{.Title}}</h1>
+            <h2>{{ .Description }}</h2>
+        </div>
+        <div class="content">
+            {{.Content}} 
+        </div>
+    </div>
+</section>
 {{ end }}

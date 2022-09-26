@@ -10,6 +10,10 @@
     transform: translateY(150%);
 }
 
+.pageTitle {
+    border-bottom: none;
+}
+
 .showY {
     transform: translateY(0%);
 }

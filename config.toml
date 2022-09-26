@@ -6,7 +6,9 @@ title = 'William Bradshaw'
   [markup.tableOfContents]
     endLevel = 6
     startLevel = 0
-
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 [menu]
 [[menu.main]]
   identifier = 'home'

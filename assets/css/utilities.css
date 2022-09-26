@@ -6,11 +6,22 @@
 }
 
 .pageTitle {
-    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 .pageTitle h1 {
     font-size: 5rem;
+    font-weight: 400;
+}
+
+.pageTitle h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.pageTitle {
+    border-bottom: 1px solid hsl(var(--text-color));
 }
 
 @media (max-width: 640px) {
